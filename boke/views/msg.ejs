@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
+  </head>
+  <body style="background: url(images/yang2.jpg) no-repeat; background-size: cover;color: #fff;">
+  	<div class="welcome">
+  		
+  		<p class="wrap" style="font-family:DaunPenh;font-size: 30px;margin-top: 10px;">欢迎来到留言板！</p>
+  	</div>
+  	<div class="wrap">
+  		<form action="/users/liuyan" method="post" role="form" style="width:300px">
+		<h3 class="input-group" style="font: 30px/30px '微软雅黑';">您的留言</h3>
+		<br />
+		<div class="input-group">
+			<input type="text" name="biaoti" class="form-control" style="width:800px" placeholder="标题"/>
+		</div>
+		<br />
+		<div class="input-group">
+			
+			<textarea name="con"  cols="30" rows="10" class="form-control" style="width:800px" placeholder="内容" ></textarea>
+		</div>
+		<br />
+		<input type="submit" value="发表" class="btn btn-danger btn-block" style='margin-left:230px'/>
+	</form>
+	<div class="bigbox" style="color: #fff;">
+		<h3 class="liu">     留 &nbsp;&nbsp;&nbsp;言&nbsp;&nbsp;&nbsp;板   </h3>
+		<% item.forEach(function(cont,index){  %>
+		
+			<div class="box">
+				<p class="flor">第<%- index+1 %>楼</p>
+				<dl>
+					<dt><span>标题：</span><%- cont.biaoti %></dt>
+					<dd><%- cont.con %></dd>
+				</dl>
+			</div>
+		<% }) %>
+	</div>
+  	</div>
+	
+	</body>
+</html>

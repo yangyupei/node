@@ -1,0 +1,39 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	
+}
+
+a {
+  color: #00B7FF;
+}
+
+header{
+		border-bottom: 3px solid #a71f12;
+    padding: 0 0 2% 0;
+    min-width: 1024px;
+    overflow: hidden;
+    }
+.hleft{	
+	font: 40px/40px "微软雅黑" ;color:#C0A16B;float: left;
+}
+.hcenter{
+	float: right;
+	display:inline-block;
+	margin-left:40px;
+}
+.hright{
+		float:right;
+   
+ 
+    font-size: 13px;
+    display:inline-block
+}
+.btn1{
+	background: none;background: pink;border: none;width: 60px;height: 30px;
+	margin-right: 20px;line-height:30px;
+}
+.btn2{
+	background: none;background: pink;border: none;width: 60px;height: 30px;
+	line-height:30px;
+}
